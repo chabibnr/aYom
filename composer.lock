@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "4546556f3a4267e59cd9489028fa4d9c",
+    "content-hash": "f6ebe65e5044d7b46d84fdc45a3aacb3",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -96,7 +96,7 @@
             "version": "3.3.9",
             "source": {
                 "type": "git",
-                "url": "https://github.com/RobinHerbots/Inputmask.git",
+                "url": "git@github.com:RobinHerbots/Inputmask.git",
                 "reference": "1fadb54be8a94e879fd1e9693b5222fb36aea04f"
             },
             "dist": {
@@ -1978,12 +1978,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "9bb2793d69f1ce8b278c4fd8825f65685b962a6a"
+                "reference": "67c066486097dda72b77f96c4193808fc9059625"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/9bb2793d69f1ce8b278c4fd8825f65685b962a6a",
-                "reference": "9bb2793d69f1ce8b278c4fd8825f65685b962a6a",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/67c066486097dda72b77f96c4193808fc9059625",
+                "reference": "67c066486097dda72b77f96c4193808fc9059625",
                 "shasum": ""
             },
             "require": {
@@ -2070,7 +2070,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2017-10-17T15:27:23+00:00"
+            "time": "2017-11-03T00:11:09+00:00"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
