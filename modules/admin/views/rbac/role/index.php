@@ -1,7 +1,7 @@
 <?php
 
 use yii\helpers\Html;
-use yii\grid\GridView;
+use kartik\grid\GridView;
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\modules\administrator\models\AuthItemSearch */
@@ -11,37 +11,38 @@ $this->title = 'Roles';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="auth-item-index">
+	<?php
+    echo GridView::widget([
+        'panel' => [
+            'type' => GridView::TYPE_PRIMARY
+        ],
+        'toolbar' => [
+            ['content' => Html::a('Create Role', ['create'], ['class' => 'btn btn-success'])],
+            '{export}',
+            '{toggleData}'
+        ],
+        'dataProvider' => $dataProvider,
+        'filterModel' => $searchModel,
+        'columns' => [
+            ['class' => 'yii\grid\SerialColumn'],
 
-	<h1><?= Html::encode($this->title) ?></h1>
-	<?php // echo $this->render('_search', ['model' => $searchModel]); ?>
-
-	<p>
-		<?= Html::a('Create Role', ['create'], ['class' => 'btn btn-success']) ?>
-	</p>
-
-	<?= GridView::widget([
-		'dataProvider' => $dataProvider,
-		'filterModel' => $searchModel,
-		'columns' => [
-			['class' => 'yii\grid\SerialColumn'],
-
-			'name',
+            'name',
             'description:ntext',
-			/*
-			'type',
-			'description:ntext',
-			'rule_name',
-			'data:ntext',
-			// 'created_at',
-			// 'updated_at',
-			*/
-			[
-				'options' => [
-					'width' => '80px',
-				],
-				'class' => 'yii\grid\ActionColumn'
-			],
-		],
-	]); ?>
+            /*
+            'type',
+            'description:ntext',
+            'rule_name',
+            'data:ntext',
+            // 'created_at',
+            // 'updated_at',
+            */
+            [
+                'options' => [
+                    'width' => '80px',
+                ],
+                'class' => 'yii\grid\ActionColumn'
+            ],
+        ],
+    ]);?>
 
 </div>

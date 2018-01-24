@@ -38,7 +38,6 @@ class BaseOauthClient extends ActiveRecord
             [['user_id'], 'integer'],
             [['client_id', 'client_secret'], 'string', 'max' => 32],
             [['redirect_uri'], 'string', 'max' => 1000],
-            [['grant_types'], 'string', 'max' => 100],
             [['scope'], 'string', 'max' => 2000],
             [['client_id'], 'unique'],
         ];

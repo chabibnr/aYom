@@ -11,9 +11,6 @@ $this->params['breadcrumbs'][] = ['label' => 'Oauth Clients', 'url' => ['index']
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="oauth-client-view">
-
-    <h1><?= Html::encode($this->title) ?></h1>
-
     <p>
         <?= Html::a('Update', ['update', 'id' => $model->client_id], ['class' => 'btn btn-primary']) ?>
         <?= Html::a('Delete', ['delete', 'id' => $model->client_id], [
@@ -32,8 +29,8 @@ $this->params['breadcrumbs'][] = $this->title;
             'client_secret',
             'redirect_uri',
             'grant_types',
-            'scope',
-            'user_id',
+            //'scope',
+            //'user_id',
         ],
     ]) ?>
 
