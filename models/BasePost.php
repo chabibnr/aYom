@@ -34,7 +34,7 @@ class BasePost extends \yii\db\ActiveRecord
             BlameableBehavior::className(),
             [
                 'class' => SluggableBehavior::className(),
-                'attribute' => 'name',
+                'attribute' => 'title',
                 'slugAttribute' => 'slug',
                 'immutable' => true
             ],
