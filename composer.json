@@ -1,5 +1,6 @@
 {
     "name": "chabibnr/ayom",
+    "version": "2.0.0",
     "description": "Project template for YII2 [AdminLTE3 Yii2 Oauth2 Mimin]",
     "keywords": ["yii2", "framework", "basic","Oauth2","RBAC", "project template"],
     "homepage": "http://www.chabibnr.net/",
